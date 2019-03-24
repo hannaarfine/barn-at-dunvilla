@@ -283,7 +283,7 @@ nav a {
 }
 
 .parallax {
-    background-image: url("assets/barn-patio.jpg");
+    background-image: url("../assets/barn-patio.jpg");
     min-height: 500px; 
     background-attachment: fixed;
     background-position: center;
@@ -291,7 +291,7 @@ nav a {
     background-size: cover;
 }
 .parallax-two {
-    background-image: url("assets/outside.jpg");
+    background-image: url("../assets/outside.jpg");
     min-height: 90vh; 
     background-attachment: fixed;
     background-position: center;
@@ -299,7 +299,7 @@ nav a {
     background-size: cover;
 }
 .parallax-events {
-    background-image: url("assets/barn-sparkler.jpg");
+    background-image: url("../assets/barn-sparkler.jpg");
     min-height: 100vh; 
     background-attachment: fixed;
     background-position: center;
@@ -311,7 +311,7 @@ nav a {
     align-items: center;
   }
   .parallax-decor {
-    background-image: url("assets/loft-table.jpg");
+    background-image: url("../assets/loft-table.jpg");
     min-height: 100vh; 
     background-attachment: fixed;
     background-position: center;
@@ -341,7 +341,7 @@ nav a {
     align-items: center;
   }
   #contact-parallax {
-    background:linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(/img/table.41012d02.jpg),  url("assets/table.jpg") ;
+    background:linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(/img/table.41012d02.jpg),  url("../assets/table.jpg") ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -350,7 +350,7 @@ nav a {
     background-repeat: no-repeat;
   }
   .parallax-events2 {
-    background-image: url("assets/doors.jpg");
+    background-image: url("../assets/doors.jpg");
     min-height: 90vh; 
     background-attachment: fixed;
     background-position: center;
@@ -358,7 +358,7 @@ nav a {
     background-size: cover;
   }
   .parallax-history {
-    background-image: url("assets/outside.jpg");
+    background-image: url("../assets/outside.jpg");
     min-height: 100vh; 
     background-attachment: fixed;
     background-position: center;
@@ -401,7 +401,7 @@ nav a {
     background: black;
   }
   .parallax-included {
-    background-image: url("assets/home/Barn7.jpg");
+    background-image: url("../assets/home/Barn7.jpg");
     min-height: 100vh; 
     background-attachment: fixed;
     background-position: center;
@@ -413,10 +413,10 @@ nav a {
     align-items: center;
   }
   .parallax-included2 {
-    background-image: url("assets/table2.jpg");
+    background-image: url("../assets/table2.jpg");
   }
   .parallax-included3 {
-    background-image: url("assets/barn-patio.jpg");
+    background-image: url("../assets/barn-patio.jpg");
   }
   .parallax-included:after {
     position: absolute;
@@ -510,6 +510,9 @@ nav a {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-style: normal !important;
+}
+#contact {
+    display: flex;
 }
 #contact h1{
     font-size: 40px;
@@ -1039,7 +1042,7 @@ hr {
       .faq-contact-mobile {
           display: block;
           visibility: visible;
-          background: url("assets/main-3-1.jpg");
+          background: url("../assets/main-3-1.jpg");
           background-size: cover;
           background-position: center;
           height: 80vh;
