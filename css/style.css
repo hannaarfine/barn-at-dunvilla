@@ -816,6 +816,9 @@ a:-webkit-any-link{
 #contact-page h1 {
     margin-top: 0;
 }
+#contact-us {
+    display: flex;
+}
 #contact-us h1 {
     margin-top: 0;
 }
@@ -868,7 +871,7 @@ hr {
     line-height: 26px;
 }
 .closed {
-    max-height: 300px;
+    /* max-height: 300px; */
     transition: all .4s ease-in-out;
 }
 .open p {
