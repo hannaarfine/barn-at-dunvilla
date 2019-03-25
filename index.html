@@ -44,7 +44,7 @@
               </div>
             </li>
           </ul>
-          <div id="logo-header"><img src="assets/barn-logo-temp.svg" id="logo"></div>
+          <div id="logo-header"><a href="index.html"><img src="assets/barn-logo-temp.svg" id="logo"></a></div>
           <ul class='nav-right'>
             <li><a href="included.html" class="dropdown">Included</a>
               <div class="dropdown-content">
@@ -75,6 +75,13 @@
       </div>
     </div>
 
+    <div class="main-slide">
+        <div class="slick-slide-indiv" style="background-image: url('assets/home/Barn0.jpg'); height: 95vh !important;"></div>
+        <div class="slick-slide-indiv" style="background-image: url('assets/home/Barn1.jpg'); height: 95vh !important;"></div>
+        <div class="slick-slide-indiv" style="background-image: url('assets/home/Barn2.jpg'); height: 95vh !important;"></div>
+        <div class="slick-slide-indiv" style="background-image: url('assets/home/Barn3.jpg'); height: 95vh !important;"></div>
+        <div class="slick-slide-indiv" style="background-image: url('assets/home/Barn7.jpg'); height: 95vh !important;"></div>
+    </div>
     <div class="main">
         <h1>Welcome to <br /> The Barn at Dunvilla! </h1>
         <div class="divider"></div>
@@ -133,17 +140,25 @@
           </div>
           <div>
               <img src="assets/quote.svg" id="quote"/>
-              <h1>Quote</h1>
-              <h2>Author</h2>
+              <h1>We loved everything about having our wedding there, and we were so happy with the service we received!!</h1>
+              <h2>Courtney S.</h2>
+          </div>
+          <div>
+              <img src="assets/quote.svg" id="quote"/>
+              <h1>I can't count the number of compliments we got on the decor, venue, and how smoothly everything ran.</h1>
+              <h2>Camille O.</h2>
+          </div>
+          <div>
+              <img src="assets/quote.svg" id="quote"/>
+              <h1>I cannot even begin to come up with the words I want to use to explain how happy I am that we booked our wedding at The Barn at Dunvilla.</h1>
+              <h2>Andy G.</h2>
+          </div>
+          <div>
+              <img src="assets/quote.svg" id="quote"/>
+              <h1>This place is absolutely fantastic.</h1>
+              <h2>Chelsie E.</h2>
           </div>
         </div>
-        <slick ref="slick" :options="slickOptions" id="quotes">
-          <div v-for="quote in Quotes" >
-              <img src="assets/quote.svg" id="quote"/>
-              <h1>{{quote.quote}} </h1>
-              <h2>{{quote.author}}</h2>
-        </div>
-        </slick>
     </div>
 
     <div class="parallax-two" ></div>
@@ -196,9 +211,18 @@
           infinite: true,
           autoplay: true,
           autoplaySpeed: 10000,
-          dots: true,
+          dots: false,
         });
       });
+
+    $(document).ready(function(){
+    $('.main-slide').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        dots: false,
+    });
+    });
 
     function menuToggle() {
       
