@@ -116,6 +116,14 @@
        drawImages('all')
      })
 
+     $(document).ready(function() {
+        var url_string = window.location.href ;  
+        var url = new URL(url_string);
+        var type = url.searchParams.get("tag");
+        drawImages(type)
+        chooseCat(type)
+    })
+
     function drawImages(tag){
       $('#gallery-images').remove()
       $('#gallery').append("<div id='gallery-images'></div>")
