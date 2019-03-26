@@ -13,10 +13,6 @@
     <link rel = "stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <!-- <link rel = "stylesheet" href="https://cdnjs.com/libraries/uikit"> -->
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.gradient.css" /> -->
-    <!-- <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -36,11 +32,11 @@
             <li><a href="gallery.html">Gallery</a></li>
             <li class="dropdown"><a href="events.html" style="opacity: .5">Events</a>
             <div class="dropdown-content" id="event-dropdown">
-                <div><a href="#">Weddings </a></div>
-                <div><a href="#">Corporate</a></div>
-                <div><a href="#">NonProfit</a></div>
-                <div><a href="#">Private</a></div>
-                <div><a href="#">Special</a></div>
+                <div><a href="events.html?type=weddings">Weddings </a></div>
+                <div><a href="events.html?type=corporate">Corporate</a></div>
+                <div><a href="events.html?type=nonprofit">NonProfit</a></div>
+                <div><a href="events.html?type=private">Private</a></div>
+                <div><a href="events.html?type=special">Special</a></div>
               </div>
             </li>
           </ul>
@@ -48,9 +44,9 @@
           <ul class='nav-right'>
             <li><a href="included.html" class="dropdown">Included</a>
               <div class="dropdown-content">
-                  <div><a href="#">Included in Your Package </a></div>
-                  <div><a href="#">Booking </a></div>
-                  <div><a href="#">Decor </a></div>
+                  <div><a href="included.html#included">Included in Your Package </a></div>
+                  <div><a href="included.html#booking">Booking </a></div>
+                  <div><a href="decor.html">Decor </a></div>
                 </div>
             </li>
             <li><a href="faq.html">FAQ</a></li>
@@ -111,6 +107,7 @@
 
 
   <script>
+    
    
     $(document).ready(function(){
         $('.quotes').slick({
@@ -139,15 +136,20 @@
         'special': 'The Barn at Dunvilla hosts numerous special events throughout the year, some of which include: Christmas at The Barn, Spring Market & Junk Market, The Dunn Show, Summer Concert Series, Food Truck Rodeos, Dunvilla Lions Food Nights, and Holiday Glam. Please follow our Events page on our website, Facebook and Instagram for information on all of our special events!  If you have ideas on what we could add to our special events, please contact us and we can chat!'
     }
     function chooseCat(cat) {
-        console.log(cat)
         $categories.forEach(function(c){
             console.log(c)
             $('#'+c).removeClass("active")
         })
         $('#' + cat).addClass("active")
         $("#description").text($categoires_desc[cat])
-
     }
+
+    $(document).ready(function(qs) {
+        var url_string = window.location.href ;  
+        var url = new URL(url_string);
+        var type = url.searchParams.get("type");
+        chooseCat(type)
+    })
 
     function menuToggle() {
       

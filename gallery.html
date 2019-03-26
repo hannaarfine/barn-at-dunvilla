@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93480337-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-93480337-2');
+    </script>
+    <meta charset="utf-8">
+    <title>Barn at Dunvilla</title>
+    <link rel = "stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <link href="lightbox2-master/src/css/lightbox.css" rel="stylesheet">
+    <script src="lightbox2-master/src/js/lightbox.js"></script>
+  </head>
+
+  <body>
+
+    <div>
+      <header>
+        <nav class="header">
+          <div class='menuToggle menuClosed' onclick="menuToggle()" id="menu-icon"></div>
+          <ul class='nav-left'>
+            <li><a href="venue.html">Venue</a></li>
+            <li><a href="gallery.html" style="opacity: .5">Gallery</a></li>
+            <li class="dropdown"><a href="events.html">Events</a>
+            <div class="dropdown-content" id="event-dropdown">
+                <div><a href="events.html?type=weddings">Weddings </a></div>
+                <div><a href="events.html?type=corporate">Corporate</a></div>
+                <div><a href="events.html?type=nonprofit">NonProfit</a></div>
+                <div><a href="events.html?type=private">Private</a></div>
+                <div><a href="events.html?type=special">Special</a></div>
+              </div>
+            </li>
+          </ul>
+          <div id="logo-header"><a href="index.html"><img src="assets/barn-logo-temp.svg" id="logo"></a></div>
+          <ul class='nav-right'>
+            <li><a href="included.html" class="dropdown">Included</a>
+              <div class="dropdown-content">
+                  <div><a href="included.html#included">Included in Your Package </a></div>
+                  <div><a href="included.html#booking">Booking </a></div>
+                  <div><a href="decor.html">Decor </a></div>
+                </div>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li ><a href="history.html">History</a></li>
+            <li ><a href="contact.html">Contact</a></li>
+            
+           
+          </ul>
+        </nav>
+      </header>
+  
+      <div class="navMobile" >
+        <ul>
+          <li><a href="venue.html">Venue</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li> 
+          <li><a href="included.html">Included</a>
+          <li><a href="faq.html">FAQ</a></li>
+          <li ><a href="history.html">History</a></li>
+          <li ><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+  
+    <div class="parallax" id="faq-parallax" style="margin-top: 115px;"><h1>Gallery </h1> </div>
+    <div class="main" id="filter-section">
+        <ul class="categories">
+          <li onclick="chooseCat('all')" id="all" class="active"> All</li>
+          <li onclick="chooseCat('loft')" id="loft">Loft</li>
+          <li onclick="chooseCat('outside')" id="outside">Outside</li>
+          <li onclick="chooseCat('bridal')" id="bridal">Bridal Suite</li>
+          <li onclick="chooseCat('fireplace')" id="fireplace">Fireplace</li>
+        </ul>
+      </div>
+    <div class="main areas" id="gallery">
+      
+          <!-- <a href="assets/doors.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/doors.jpg" /></div></a>
+          <a href="assets/home/Barn0.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/home/Barn0.jpg" /></div></a>
+          <a href="assets/home/Barn1.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/home/Barn1.jpg" /></div></a>
+          <a href="assets/home/Barn2.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/home/Barn2.jpg" /></div></a>
+          <a href="assets/barn-patio.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/barn-patio.jpg" /></div></a>
+          <a href="assets/gallery/2018-09-19_0039.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0039.jpg" /></div></a>
+          <a href="assets/home/Barn3.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/home/Barn3.jpg" /></div></a>
+          <a href="assets/home/Barn7.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/home/Barn7.jpg" /></div></a>
+          <a href="assets/gallery/2013-07-28_0073.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2013-07-28_0073.jpg" /></div></a>
+          <a href="assets/gallery/2013-07-28_0087.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2013-07-28_0087.jpg" /></div></a>
+          <a href="assets/gallery/2013-07-28_0101.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2013-07-28_0101.jpg" /></div></a>
+          <a href="assets/gallery/2013-07-28_0103.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2013-07-28_0103.jpg" /></div></a>
+          <a href="assets/gallery/2013-07-28_0112.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2013-07-28_0112.jpg" /></div></a>
+          <a href="assets/gallery/2018-09-19_0006-768x1152.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0006-768x1152.jpg" /></div></a>
+          <a href="assets/gallery/2018-09-19_0012-768x1152.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0012-768x1152.jpg" /></div></a>
+          <a href="assets/gallery/2018-09-19_0021-768x1152.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0021-768x1152.jpg" /></div></a>
+          <a href="assets/gallery/2018-09-19_0022-768x1152.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0022-768x1152.jpg" /></div></a>
+          
+          <a href="assets/gallery/2018-09-19_0073-768x1152.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0073-768x1152.jpg" /></div></a>
+          <a href="assets/gallery/2018-09-19_0095 copy.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0095 copy.jpg" /></div></a>
+          <a href="assets/gallery/2018-09-19_0105-768x1150.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0105-768x1150.jpg" /></div></a>
+          <a href="assets/gallery/20543768_1090878904376519_3346421830323256105_o.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/20543768_1090878904376519_3346421830323256105_o.jpg" /></div></a>
+          <a href="assets/gallery/22538562_1135134376617638_7119840871978276973_o.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/22538562_1135134376617638_7119840871978276973_o.jpg" /></div></a>
+          <a href="assets/gallery/abby_anderson_fargo_moorhead_wedding_photographer_044.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/abby_anderson_fargo_moorhead_wedding_photographer_044.jpg" /></div></a>
+          <a href="assets/gallery/Detroit-Lakes-Wedding-Photographer-Garden-Styled-Shoot-1.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Detroit-Lakes-Wedding-Photographer-Garden-Styled-Shoot-1.jpg" /></div></a>
+          <a href="assets/gallery/Detroit-Lakes-Wedding-Photographer-Garden-Styled-Shoot-11.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Detroit-Lakes-Wedding-Photographer-Garden-Styled-Shoot-11.jpg" /></div></a>
+          <a href="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-35.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-35.jpg" /></div></a>
+          <a href="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-50.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-50.jpg" /></div></a>
+          <a href="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-53.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-53.jpg" /></div></a>
+          <a href="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-54-768x1151.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-54-768x1151.jpg" /></div></a>
+          <a href="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-56.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-56.jpg" /></div></a>
+          <a href="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-99.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-99.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-22-1024x683.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-22-1024x683.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-25-1024x682.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-25-1024x682.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-48-1024x768.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-48-1024x768.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-68-1024x767.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-68-1024x767.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-6.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-6.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-38.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-38.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-42.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-42.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-64.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-64.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-66.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-66.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-104.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-104.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Wedding-Photos-49.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Wedding-Photos-49.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Wedding-Photos-77.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Wedding-Photos-77.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-1.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-1.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-49.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-49.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-65.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-65.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-66.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-66.jpg" /></div></a>
+          <a href="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-71.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-71.jpg" /></div></a>
+          <a href="assets/fireplace.png" data-lightbox="gallery"><div class="half-panel"><img src="assets/fireplace.png" /></div></a> -->
+    </div>
+
+
+    <div>
+        <footer id="footer">
+          
+          <p id="title">The Barn at Dunvilla</p>
+          <p>48203 U.S. 59, <br />
+          Pelican Rapids, MN <br />
+          56572
+          </p>
+    
+            <div class="icons">
+                <a href="https://www.instagram.com/barnatdunvilla/" target="_blank"><img src="assets/instagram.svg" /></a>
+                <a href="https://www.facebook.com/TheBarnAtDunvilla/?jazoest=2651001206895112122709810089747710890837045821086510175838610511511711111880787211211889113791018295747576801035865100121551106766768851685710510376955774711061009910310810055571167911675103555410378901081085311771721128965" target="_blank"><img src="assets/facebook.svg" /></a>
+                <a href="tel:2188497802"><img src="assets/phone2.svg" id="call"/></a>
+            </div>  
+        </footer>
+    </div>
+
+
+  <script>
+    
+   
+
+    $categories = ['all', 'loft', 'outside', 'bridal', 'fireplace']
+
+    function drawImages(tag){
+      $('#gallery-images').remove()
+      $('#gallery').append("<div id='gallery-images'></div>")
+      
+      $outside = ['<a href="assets/doors.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/doors.jpg" /></div></a>',
+      ' <a href="assets/home/Barn1.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/home/Barn1.jpg" /></div></a>',
+      '<a href="assets/home/Barn3.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/home/Barn3.jpg" /></div></a>',
+      '<a href="assets/barn-patio.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/barn-patio.jpg" /></div></a>',
+      '<a href="assets/gallery/2013-07-28_0073.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2013-07-28_0073.jpg" /></div></a>',
+      '<a href="assets/gallery/2018-09-19_0105-768x1150.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0105-768x1150.jpg" /></div></a>',
+      ' <a href="assets/gallery/abby_anderson_fargo_moorhead_wedding_photographer_044.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/abby_anderson_fargo_moorhead_wedding_photographer_044.jpg" /></div></a>', 
+      ' <a href="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-35.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-35.jpg" /></div></a>',
+      ' <a href="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-50.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-50.jpg" /></div></a>',
+      ' <a href="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-53.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-53.jpg" /></div></a>',
+      ' <a href="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-22-1024x683.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-22-1024x683.jpg" /></div></a>',
+
+      ]
+      $loft = ['<a href="assets/home/Barn0.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/home/Barn0.jpg" /></div></a>',
+      '<a href="assets/home/Barn2.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/home/Barn2.jpg" /></div></a>',
+      '<a href="assets/home/Barn7.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/home/Barn7.jpg" /></div></a>',
+      '<a href="assets/gallery/2018-09-19_0039.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0039.jpg" /></div></a>',
+      '<a href="assets/gallery/2013-07-28_0087.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2013-07-28_0087.jpg" /></div></a>',
+      '<a href="assets/gallery/2013-07-28_0101.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2013-07-28_0101.jpg" /></div></a>',
+      ' <a href="assets/gallery/2013-07-28_0103.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2013-07-28_0103.jpg" /></div></a>',
+      ' <a href="assets/gallery/2013-07-28_0112.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2013-07-28_0112.jpg" /></div></a>',
+      '<a href="assets/gallery/2018-09-19_0095 copy.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0095 copy.jpg" /></div></a>',
+      ' <a href="assets/gallery/22538562_1135134376617638_7119840871978276973_o.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/22538562_1135134376617638_7119840871978276973_o.jpg" /></div></a>',
+      '<a href="assets/gallery/Detroit-Lakes-Wedding-Photographer-Garden-Styled-Shoot-1.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Detroit-Lakes-Wedding-Photographer-Garden-Styled-Shoot-1.jpg" /></div></a>',
+      '<a href="assets/gallery/Detroit-Lakes-Wedding-Photographer-Garden-Styled-Shoot-11.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Detroit-Lakes-Wedding-Photographer-Garden-Styled-Shoot-11.jpg" /></div></a>',
+      ' <a href="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-54-768x1151.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-54-768x1151.jpg" /></div></a>',
+      ' <a href="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-56.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-56.jpg" /></div></a>',
+      '<a href="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-99.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/Outdoor-Barn-Wedding-Pelican-Rapids-Minnesota-99.jpg" /></div></a>',
+      '<a href="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-25-1024x682.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-25-1024x682.jpg" /></div></a>',  
+      '<a href="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-48-1024x768.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-48-1024x768.jpg" /></div></a>',
+      '<a href="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-68-1024x767.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Outdoor-Autumn-Wedding-68-1024x767.jpg" /></div></a>'
+    
+    ]
+      $fireplace = ['<a href="assets/fireplace.png" data-lightbox="gallery"><div class="half-panel"><img src="assets/fireplace.png" /></div></a>']
+      $bridal = ['<a href="assets/gallery/2018-09-19_0006-768x1152.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0006-768x1152.jpg" /></div></a>',
+      ' <a href="assets/gallery/2013-07-28_0087.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2013-07-28_0087.jpg" /></div></a>',
+      ' <a href="assets/gallery/2018-09-19_0021-768x1152.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0021-768x1152.jpg" /></div></a>',
+      '<a href="assets/gallery/2018-09-19_0022-768x1152.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0022-768x1152.jpg" /></div></a>',
+      ' <a href="assets/gallery/20543768_1090878904376519_3346421830323256105_o.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/20543768_1090878904376519_3346421830323256105_o.jpg" /></div></a>',
+      '<a href="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-6.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-6.jpg" /></div></a>'
+    ]
+      
+      
+      
+      if(tag == 'outside'){
+        $outside.forEach(function(img){
+          $('#gallery-images').append(img);
+        })
+      }
+
+      else if (tag =='loft'){
+        $loft.forEach(function(img){
+          $('#gallery-images').append(img);
+        })
+      }
+
+      else if (tag=='fireplace'){
+
+      }
+
+      else if (tag == 'bridal'){
+
+      }
+
+      else {
+
+      }
+      
+      
+      
+    }
+    
+    function chooseCat(cat) {
+        $categories.forEach(function(c){
+            $('#'+c).removeClass("active")
+        })
+        $('#' + cat).addClass("active")
+        drawImages(cat);
+    }
+
+    function menuToggle() {
+      
+      class_list = $("#menu-icon").attr("class").split(' ')
+      if(class_list[1]=='menuClosed'){
+        $("#menu-icon").removeClass('menuClosed')
+        $("#menu-icon").addClass('menuOpen')
+        $(".navMobile").addClass('navMobileVisible')
+      }
+      else{
+        $("#menu-icon").removeClass('menuOpen')
+        $("#menu-icon").addClass('menuClosed')
+        $(".navMobile").removeClass('navMobileVisible')
+      }
+    }
+  </script>
+
+  </body>
+</html>
