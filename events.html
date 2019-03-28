@@ -19,6 +19,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   </head>
 
   <body>
@@ -32,7 +33,7 @@
             <li><a href="gallery.html">Gallery</a></li>
             <li class="dropdown"><a href="events.html" style="opacity: .5">Events</a>
             <div class="dropdown-content" id="event-dropdown">
-                <div><a href="events.html?type=weddings">Weddings </a></div>
+                <div><a href="events.html?type=weddings" class="active">Weddings </a></div>
                 <div><a href="events.html?type=corporate">Corporate</a></div>
                 <div><a href="events.html?type=nonprofit">NonProfit</a></div>
                 <div><a href="events.html?type=private">Private</a></div>
@@ -40,7 +41,7 @@
               </div>
             </li>
           </ul>
-          <div id="logo-header"><a href="index.html"><img src="assets/barn-logo-temp.svg" id="logo"></a></div>
+          <a href="index.html"><div id="logo-header"><img src="assets/barn-logo-temp.svg" id="logo"></div></a>
           <ul class='nav-right'>
             <li><a href="included.html" class="dropdown">Included</a>
               <div class="dropdown-content">
@@ -84,7 +85,7 @@
         </ul>
         <p id="description">The Barn is a gorgeous venue with large areas on the main floor, the loft, outdoor patio and deck. With seating in the loft easily for 250, and sometimes up to 280, the indoor space offers everything you need for all the events of the day, while the outdoor offers lawn for ceremonies, receptions, and relaxation. The Barn includes a Bridal Retreat for getting ready for your day along with The Boathouse for the groom and his friends. On six spacious acres, the property  includes ample space for wedding celebrations on the lawn and inside The Barn along with space for lawn games, throwing a ball, hanging out on the patio and deck, or just walking around to enjoy the day.</p>
       </div>
-      <div class="parallax-events2" />
+      <div class="parallax-events2" ></div>
     
 
 
@@ -137,7 +138,6 @@
     }
     function chooseCat(cat) {
         $categories.forEach(function(c){
-            console.log(c)
             $('#'+c).removeClass("active")
         })
         $('#' + cat).addClass("active")
@@ -148,7 +148,10 @@
         var url_string = window.location.href ;  
         var url = new URL(url_string);
         var type = url.searchParams.get("type");
+        if(type != null ){
+
         chooseCat(type)
+        }
     })
 
     function menuToggle() {

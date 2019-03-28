@@ -27,14 +27,14 @@ h4 {
     font-style: italic;
 }
 h5 {
-    font-family: 'Metropolis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     line-height: 32px;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
 }
 p {
-    font-family: 'Metropolis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-style: italic;
     text-align: center;
@@ -43,7 +43,7 @@ p {
     padding: 0 10px;
 }
 body {
-    font-family: 'Metropolis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0 !important;
 }
 header {
@@ -155,7 +155,7 @@ nav a {
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 14px;
-    font-family: 'Metropolis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: black;
 }
 .nav-left {
@@ -269,7 +269,7 @@ nav a {
     padding: 40px 20px 20px 20px;
 }
 .contact-panel h1 {
-    font-family: 'Metropolis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -433,6 +433,7 @@ nav a {
       color: white;
       text-shadow: 0 0 10px rgba(0, 0, 0, .5);
       z-index: 99;
+      text-align: center;
   }
 #about a {
     font-weight: 500;
@@ -471,6 +472,7 @@ nav a {
 }
 #right {
     margin-left: 2%;
+    height: 240px;
 }
 #sparkler {
     width: 100%;
@@ -505,7 +507,7 @@ nav a {
 }
 #quotes h2 {
     text-align: center;
-    font-family: "Metropolis", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px !important;
     font-weight: 400;
     margin-top: 60px;
@@ -557,7 +559,7 @@ nav a {
     border-radius: 6px 6px 0 0;
     border-bottom: 3px solid transparent;
     font-size: 14px;
-    font-family: 'Metropolis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 25px;
 }
 .half input:focus {
@@ -573,7 +575,7 @@ nav a {
     padding: 15px;
     border-radius: 6px;
     font-size: 14px;
-    font-family: 'Metropolis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 25px;
     border-bottom: 3px solid transparent;
 }
@@ -585,15 +587,15 @@ nav a {
 }
 
 #send {
-    width: 100%;
-    background: #01AF66;
-    color: white;
-    height: 45px;
-    text-align: center;
-    font-family: 'Metropolis', sans-serif;  
-    font-size: 15px;
-    border: none;
-    border-radius: 4px;
+    width: 100% !important;
+    background: #01AF66 !important;
+    color: white !important;
+    height: 45px !important;
+    text-align: center !important;
+    font-family: 'Montserrat', sans-serif !important;  
+    font-size: 15px !important;
+    border: none !important;
+    border-radius: 4px !important;
 }
 
 #send:hover {
@@ -1037,6 +1039,62 @@ hr {
 /*********** Responsive ***********/
 
 @media only screen and (min-width : 320px) and (max-width :800px) {
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+    .parallax-two {
+        min-height: 70vh;
+        background-position-x: 70%;
+    }
+    #contact-page {
+        padding-top: 100px;
+        display: block;
+    }
+    .categories {
+        display: block;
+    }
+    .categories li {
+        margin: 5px 28px 5px 0 !important;
+    }
+    #included-list {
+        max-width: 100%;
+    }
+    .main-middle {
+        max-width: 90% !important;
+    }
+    #included li {
+
+        line-height: 24px;
+    }
+    #filter-section {
+        max-width: 100%;
+    }
+    .areas {
+        column-count: 2;
+        margin-bottom: 0;
+    }
+    .two-across div {
+        height: auto !important;
+    }
+    #contact h1 {
+        font-size: 30px;
+    }
+    #contact {
+        display: block;
+    }
+    .half {
+        width: 100%;
+        display: block;
+        padding-top: 40px;
+    }
+    #right {
+        height: 240px !important;
+    }
     nav li {
         display: none !important;
     }
@@ -1111,7 +1169,14 @@ hr {
         margin-top: 90px;
       }
       .main {
-        padding: 10px 20px;
+        padding: 5%;
+        max-width: 95%;
+      }
+      .content-paragraph {
+          padding: 5%;
+      }
+      .half-panel h1 {
+          font-size: 20px;
       }
       h1 {
           font-size: 30px;
@@ -1123,18 +1188,32 @@ hr {
           display: block;
           padding-top: 10px;
       }
+      .contact-images-three {
+          display: block;
+      }
       .third-panel {
-          width: auto;
-          margin: 0;
-          padding: 0;
+        width: 80%;
+        margin: 5%;
+        padding: 5%;
       }
       .third-panel p {
           padding: 0;
-          text-align: left;
+          text-align: center;
           color: black !important;
       }
       .third-panel h3 {
         text-align: left;
+      }
+      .main-images-three .third-panel {
+          width: 90%;
+          margin: auto;
+            text-align: center;
+            padding: 5%;
+            margin-bottom: 5%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1)
+      }
+      .third-panel h3 {
+          text-align: center;
       }
       #quote {
           width: 33px;
@@ -1189,7 +1268,7 @@ hr {
       .faq-contact-mobile h1 {
         color: white;
         text-align: center;
-        font-family: 'Metropolis', 'Helvetica Neue', sans-serif;
+        font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
         font-style: normal;
         font-size: 32px;
         text-shadow: 0 0 15px rgba(0, 0, 0);
@@ -1207,7 +1286,7 @@ hr {
         border-radius: 6px 6px 0 0;
         border-bottom: 3px solid transparent;
         font-size: 14px;
-        font-family: 'Metropolis', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         margin-bottom: 25px;
         color: black;
         font-weight: 600;
@@ -1227,7 +1306,7 @@ hr {
         border-radius: 6px 6px 0 0;
         border-bottom: 3px solid transparent;
         font-size: 14px;
-        font-family: 'Metropolis', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         margin-bottom: 25px;
         color: black;
         font-weight: 600;
@@ -1242,7 +1321,7 @@ hr {
           padding-top: 40px;
       }
       #send {
-        font-weight: 500;
+        font-weight: 500 !important; 
       }
       #quotes .slick-list{
           height: 360px;
