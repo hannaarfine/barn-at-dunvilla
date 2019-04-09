@@ -38,7 +38,7 @@ p {
     font-size: 14px;
     font-style: italic;
     text-align: center;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 19px;
     padding: 0 10px;
 }
@@ -205,7 +205,7 @@ nav a {
 	right: 0 !important;
 	bottom: 0 !important;
 	left: 0 !important;
-	background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)) !important;
+	/* background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)) !important; */
 	opacity: .07 !important;
   }
 
@@ -472,7 +472,6 @@ nav a {
 }
 #right {
     margin-left: 2%;
-    height: 240px;
 }
 #sparkler {
     width: 100%;
@@ -674,11 +673,17 @@ footer p {
 a:-webkit-any-link{
     text-decoration: none;
 }
+#logo-header:hover {
+    opacity: 1 !important;
+}
 #logo-header a {
     opacity: 1 !important;
 }
 #logo-header a:hover {
     opacity: 1 !important;
+}
+#logo-header {
+    padding-top: 10px;
 }
 
 /****** Venue ******/
@@ -1047,6 +1052,10 @@ hr {
         padding: 0px;
         overflow-x: hidden; 
     }
+    #right {
+        margin-left: 2%;
+        height: 240px;
+    }
     .parallax-two {
         min-height: 70vh;
         background-position-x: 70%;
@@ -1105,7 +1114,7 @@ hr {
         display: inline;
     }
     header {
-        background-image: url("../assets/barn-logo-temp.svg");
+        background-image: url("../assets/barn-logo-temp.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 23%;
