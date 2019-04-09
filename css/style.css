@@ -240,6 +240,7 @@ nav a {
     margin: 1%;
     padding: 1%;
     border-radius: 4px;
+    color: black !important;
 }
 .third-panel a {
     color: black !important;
