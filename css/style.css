@@ -1126,7 +1126,7 @@ hr {
         padding: 0 25px;
     }
     #logo-header {
-        opacity: 0;
+        opacity: 0 !important;
     }
     .navMobile {
         height: 0;
