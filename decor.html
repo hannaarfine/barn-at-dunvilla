@@ -1,44 +1,76 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93480337-2"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-93480337-2"
+    ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-93480337-2');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-93480337-2");
     </script>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Barn at Dunvilla</title>
-    <link rel = "stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="manifest" href="assets/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
 
   <body>
-
     <div>
       <header>
         <nav class="header">
-          <div class='menuToggle menuClosed' onclick="menuToggle()" id="menu-icon"></div>
-          <ul class='nav-left'>
+          <div
+            class="menuToggle menuClosed"
+            onclick="menuToggle()"
+            id="menu-icon"
+          ></div>
+          <ul class="nav-left">
             <li><a href="venue.html">Venue</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li class="dropdown"><a href="events.html">Events</a>
-            <div class="dropdown-content" id="event-dropdown">
+            <li class="dropdown">
+              <a href="events.html">Events</a>
+              <div class="dropdown-content" id="event-dropdown">
                 <div><a href="events.html?type=weddings">Weddings </a></div>
                 <div><a href="events.html?type=corporate">Corporate</a></div>
                 <div><a href="events.html?type=nonprofit">NonProfit</a></div>
@@ -47,113 +79,121 @@
               </div>
             </li>
           </ul>
-          <a href="index.html"><div id="logo-header"><img src="assets/barn-logo-temp.png" id="logo"></div></a>
-          <ul class='nav-right'>
-            <li class="dropdown"><a href="included.html" style="opacity: .5;">Included</a>
+          <a href="index.html"
+            ><div id="logo-header">
+              <img src="assets/barn-logo-temp.png" id="logo" /></div
+          ></a>
+          <ul class="nav-right">
+            <li class="dropdown">
+              <a href="included.html" style="opacity: .5;">Included</a>
               <div class="dropdown-content">
-                  <div><a href="included.html#included">Included in Your Package </a></div>
-                  <div><a href="included.html#booking">Booking </a></div>
-                  <div><a href="decor.html">Decor </a></div>
+                <div>
+                  <a href="included.html#included">Included in Your Package </a>
                 </div>
+                <div><a href="included.html#booking">Booking </a></div>
+                <div><a href="decor.html">Decor </a></div>
+              </div>
             </li>
             <li><a href="faq.html">FAQ</a></li>
-            <li ><a href="history.html">History</a></li>
-            <li ><a href="contact.html"  >Contact</a></li>
-            
-           
+            <li><a href="history.html">History</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
-  
-      <div class="navMobile" >
+
+      <div class="navMobile">
         <ul>
           <li><a href="venue.html">Venue</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="events.html">Events</a></li> 
-          <li><a href="included.html">Included</a>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="included.html">Included</a></li>
           <li><a href="faq.html">FAQ</a></li>
-          <li ><a href="history.html">History</a></li>
-          <li ><a href="contact.html">Contact</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
 
-  
     <div class="parallax-decor">
-        <h1>Decor</h1>
-      </div>
+      <h1>Decor</h1>
+    </div>
     <div class="main content-paragraph" id="included">
-        <div class="decor-details">
-         <img src="assets/decor/1.png" />
-         <img src="assets/decor/2.png" />
-         <img src="assets/decor/3.png" />
-         <img src="assets/decor/4.png" />
-         <img src="assets/decor/5.png" />
-         <img src="assets/decor/6.png" />
-         <img src="assets/decor/7.png" />
-         <img src="assets/decor/8.png" />
-         <img src="assets/decor/9.png" />
-         <img src="assets/decor/10.png" />
-         <img src="assets/decor/11.png" />
-        </div>
+      <div class="decor-details">
+        <img src="assets/decor/1.png" />
+        <img src="assets/decor/2.png" />
+        <img src="assets/decor/3.png" />
+        <img src="assets/decor/4.png" />
+        <img src="assets/decor/5.png" />
+        <img src="assets/decor/6.png" />
+        <img src="assets/decor/7.png" />
+        <img src="assets/decor/8.png" />
+        <img src="assets/decor/9.png" />
+        <img src="assets/decor/10.png" />
+        <img src="assets/decor/11.png" />
       </div>
-        
-      <div class="parallax-events2"></div>
-    
-
-
-    <div>
-        <footer id="footer">
-          
-          <p id="title">The Barn at Dunvilla</p>
-          <p>48203 U.S. 59, <br />
-          Pelican Rapids, MN <br />
-          56572
-          </p>
-    
-            <div class="icons">
-                <a href="https://www.instagram.com/barnatdunvilla/" target="_blank"><img src="assets/instagram.svg" /></a>
-                <a href="https://www.facebook.com/TheBarnAtDunvilla/?jazoest=2651001206895112122709810089747710890837045821086510175838610511511711111880787211211889113791018295747576801035865100121551106766768851685710510376955774711061009910310810055571167911675103555410378901081085311771721128965" target="_blank"><img src="assets/facebook.svg" /></a>
-                <a href="tel:2188499621"><img src="assets/phone2.svg" id="call"/></a>
-            </div>  
-        </footer>
     </div>
 
+    <div class="parallax-events2"></div>
 
-  <script>
-    $(document).ready(function(){
-        $('.quotes').slick({
+    <div>
+      <footer id="footer">
+        <p id="title">The Barn at Dunvilla</p>
+        <p>
+          48203 U.S. 59, <br />
+          Pelican Rapids, MN <br />
+          56572
+        </p>
+
+        <p>
+          (218) 849-9621
+        </p>
+        <div class="icons">
+          <a href="https://www.instagram.com/barnatdunvilla/" target="_blank"
+            ><img src="assets/instagram.svg"
+          /></a>
+          <a
+            href="https://www.facebook.com/TheBarnAtDunvilla/?jazoest=2651001206895112122709810089747710890837045821086510175838610511511711111880787211211889113791018295747576801035865100121551106766768851685710510376955774711061009910310810055571167911675103555410378901081085311771721128965"
+            target="_blank"
+            ><img src="assets/facebook.svg"
+          /></a>
+          <a href="tel:2188499621"><img src="assets/phone2.svg" id="call"/></a>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        $(".quotes").slick({
           infinite: true,
           autoplay: true,
           autoplaySpeed: 10000,
-          dots: false,
+          dots: false
         });
       });
 
-    $(document).ready(function(){
-    $('.main-slide').slick({
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 10000,
-        dots: false,
-    });
-    });
+      $(document).ready(function() {
+        $(".main-slide").slick({
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 10000,
+          dots: false
+        });
+      });
 
-    function menuToggle() {
-      
-      class_list = $("#menu-icon").attr("class").split(' ')
-      if(class_list[1]=='menuClosed'){
-        $("#menu-icon").removeClass('menuClosed')
-        $("#menu-icon").addClass('menuOpen')
-        $(".navMobile").addClass('navMobileVisible')
+      function menuToggle() {
+        class_list = $("#menu-icon")
+          .attr("class")
+          .split(" ");
+        if (class_list[1] == "menuClosed") {
+          $("#menu-icon").removeClass("menuClosed");
+          $("#menu-icon").addClass("menuOpen");
+          $(".navMobile").addClass("navMobileVisible");
+        } else {
+          $("#menu-icon").removeClass("menuOpen");
+          $("#menu-icon").addClass("menuClosed");
+          $(".navMobile").removeClass("navMobileVisible");
+        }
       }
-      else{
-        $("#menu-icon").removeClass('menuOpen')
-        $("#menu-icon").addClass('menuClosed')
-        $(".navMobile").removeClass('navMobileVisible')
-      }
-    }
-  </script>
-
+    </script>
   </body>
 </html>

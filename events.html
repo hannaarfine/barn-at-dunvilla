@@ -1,45 +1,81 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93480337-2"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-93480337-2"
+    ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-93480337-2');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-93480337-2");
     </script>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Barn at Dunvilla</title>
-    <link rel = "stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="manifest" href="assets/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
 
   <body>
-
     <div>
       <header>
         <nav class="header">
-          <div class='menuToggle menuClosed' onclick="menuToggle()" id="menu-icon"></div>
-          <ul class='nav-left'>
+          <div
+            class="menuToggle menuClosed"
+            onclick="menuToggle()"
+            id="menu-icon"
+          ></div>
+          <ul class="nav-left">
             <li><a href="venue.html">Venue</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li class="dropdown"><a href="events.html" style="opacity: .5">Events</a>
-            <div class="dropdown-content" id="event-dropdown">
-                <div><a href="events.html?type=weddings" class="active">Weddings </a></div>
+            <li class="dropdown">
+              <a href="events.html" style="opacity: .5">Events</a>
+              <div class="dropdown-content" id="event-dropdown">
+                <div>
+                  <a href="events.html?type=weddings" class="active"
+                    >Weddings
+                  </a>
+                </div>
                 <div><a href="events.html?type=corporate">Corporate</a></div>
                 <div><a href="events.html?type=nonprofit">NonProfit</a></div>
                 <div><a href="events.html?type=private">Private</a></div>
@@ -47,134 +83,165 @@
               </div>
             </li>
           </ul>
-          <a href="index.html"><div id="logo-header"><img src="assets/barn-logo-temp.png" id="logo"></div></a>
-          <ul class='nav-right'>
-            <li><a href="included.html" class="dropdown">Included</a>
+          <a href="index.html"
+            ><div id="logo-header">
+              <img src="assets/barn-logo-temp.png" id="logo" /></div
+          ></a>
+          <ul class="nav-right">
+            <li>
+              <a href="included.html" class="dropdown">Included</a>
               <div class="dropdown-content">
-                  <div><a href="included.html#included">Included in Your Package </a></div>
-                  <div><a href="included.html#booking">Booking </a></div>
-                  <div><a href="decor.html">Decor </a></div>
+                <div>
+                  <a href="included.html#included">Included in Your Package </a>
                 </div>
+                <div><a href="included.html#booking">Booking </a></div>
+                <div><a href="decor.html">Decor </a></div>
+              </div>
             </li>
             <li><a href="faq.html">FAQ</a></li>
-            <li ><a href="history.html">History</a></li>
-            <li ><a href="contact.html">Contact</a></li>
-            
-           
+            <li><a href="history.html">History</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
-  
-      <div class="navMobile" >
+
+      <div class="navMobile">
         <ul>
           <li><a href="venue.html">Venue</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="events.html">Events</a></li> 
-          <li><a href="included.html">Included</a>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="included.html">Included</a></li>
           <li><a href="faq.html">FAQ</a></li>
-          <li ><a href="history.html">History</a></li>
-          <li ><a href="contact.html">Contact</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
 
     <div class="parallax-events">
-        <h1>Events</h1>
-      </div>
-      <div class="main" id="categories">
-        <ul class="categories">
-            <li id="weddings" onclick="chooseCat('weddings')" class="active">Weddings</li>
-            <li id="corporate" onclick="chooseCat('corporate')">Corporate</li>
-            <li id="nonprofit" onclick="chooseCat('nonprofit')">NonProfit</li>
-            <li id="private" onclick="chooseCat('private')">Private</li>
-            <li id="special" onclick="chooseCat('special')">Special</li>
-        </ul>
-        <p id="description">The Barn is a gorgeous venue with large areas on the main floor, the loft, outdoor patio and deck. With seating in the loft easily for 250, and sometimes up to 280, the indoor space offers everything you need for all the events of the day, while the outdoor offers lawn for ceremonies, receptions, and relaxation. The Barn includes a Bridal Retreat for getting ready for your day along with The Boathouse for the groom and his friends. On six spacious acres, the property  includes ample space for wedding celebrations on the lawn and inside The Barn along with space for lawn games, throwing a ball, hanging out on the patio and deck, or just walking around to enjoy the day.</p>
-      </div>
-      <div class="parallax-events2" ></div>
-    
-
+      <h1>Events</h1>
+    </div>
+    <div class="main" id="categories">
+      <ul class="categories">
+        <li id="weddings" onclick="chooseCat('weddings')" class="active">
+          Weddings
+        </li>
+        <li id="corporate" onclick="chooseCat('corporate')">Corporate</li>
+        <li id="nonprofit" onclick="chooseCat('nonprofit')">NonProfit</li>
+        <li id="private" onclick="chooseCat('private')">Private</li>
+        <li id="special" onclick="chooseCat('special')">Special</li>
+      </ul>
+      <p id="description">
+        The Barn is a gorgeous venue with large areas on the main floor, the
+        loft, outdoor patio and deck. With seating in the loft easily for 250,
+        and sometimes up to 280, the indoor space offers everything you need for
+        all the events of the day, while the outdoor offers lawn for ceremonies,
+        receptions, and relaxation. The Barn includes a Bridal Retreat for
+        getting ready for your day along with The Boathouse for the groom and
+        his friends. On six spacious acres, the property includes ample space
+        for wedding celebrations on the lawn and inside The Barn along with
+        space for lawn games, throwing a ball, hanging out on the patio and
+        deck, or just walking around to enjoy the day.
+      </p>
+    </div>
+    <div class="parallax-events2"></div>
 
     <div>
-        <footer id="footer">
-          
-          <p id="title">The Barn at Dunvilla</p>
-          <p>48203 U.S. 59, <br />
+      <footer id="footer">
+        <p id="title">The Barn at Dunvilla</p>
+        <p>
+          48203 U.S. 59, <br />
           Pelican Rapids, MN <br />
           56572
-          </p>
-    
-            <div class="icons">
-                <a href="https://www.instagram.com/barnatdunvilla/" target="_blank"><img src="assets/instagram.svg" /></a>
-                <a href="https://www.facebook.com/TheBarnAtDunvilla/?jazoest=2651001206895112122709810089747710890837045821086510175838610511511711111880787211211889113791018295747576801035865100121551106766768851685710510376955774711061009910310810055571167911675103555410378901081085311771721128965" target="_blank"><img src="assets/facebook.svg" /></a>
-                <a href="tel:2188499621"><img src="assets/phone2.svg" id="call"/></a>
-            </div>  
-        </footer>
+        </p>
+
+        <p>
+          (218) 849-9621
+        </p>
+
+        <div class="icons">
+          <a href="https://www.instagram.com/barnatdunvilla/" target="_blank"
+            ><img src="assets/instagram.svg"
+          /></a>
+          <a
+            href="https://www.facebook.com/TheBarnAtDunvilla/?jazoest=2651001206895112122709810089747710890837045821086510175838610511511711111880787211211889113791018295747576801035865100121551106766768851685710510376955774711061009910310810055571167911675103555410378901081085311771721128965"
+            target="_blank"
+            ><img src="assets/facebook.svg"
+          /></a>
+          <a href="tel:2188499621"><img src="assets/phone2.svg" id="call"/></a>
+        </div>
+      </footer>
     </div>
 
-
-  <script>
-    
-   
-    $(document).ready(function(){
-        $('.quotes').slick({
+    <script>
+      $(document).ready(function() {
+        $(".quotes").slick({
           infinite: true,
           autoplay: true,
           autoplaySpeed: 10000,
-          dots: false,
+          dots: false
         });
       });
 
-    $(document).ready(function(){
-    $('.main-slide').slick({
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 10000,
-        dots: false,
-    });
-    });
+      $(document).ready(function() {
+        $(".main-slide").slick({
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 10000,
+          dots: false
+        });
+      });
 
-    $categories = ['weddings', 'corporate', 'nonprofit', 'private', 'special']
-    $categoires_desc = {
-        'weddings': 'The Barn is a gorgeous venue with large areas on the main floor, the loft, outdoor patio and deck. With seating in the loft easily for 250, and sometimes up to 280, the indoor space offers everything you need for all the events of the day, while the outdoor offers lawn for ceremonies, receptions, and relaxation. The Barn includes a Bridal Retreat for getting ready for your day along with The Boathouse for the groom and his friends. On six spacious acres, the property  includes ample space for wedding celebrations on the lawn and inside The Barn along with space for lawn games, throwing a ball, hanging out on the patio and deck, or just walking around to enjoy the day.', 
-        'corporate': 'Create new inspiration in your employees by getting them out of the office for an offsite special event that your colleagues and employees will remember!  Let ideas and imaginations flow surrounded by the sounds and sights at The Barn at Dunvilla.  Enjoy a BBQ lunch, or traditional catered meal, on the lawn or in our beautiful indoors.  Celebrate a company Christmas party or successful business year. The Barn at Dunvilla offers many possibilities for corporate gatherings with six acres of outdoor space and two levels of indoor space with seating for 250. We have everything you need to host your event in a comfortable environment.  A great venue for planning that next big strategy, doing team building or celebrating with your colleagues!',
-        'nonprofit': 'The Barn at Dunvilla welcomes nonprofit groups for meetings and conferences. Whether hosting a one day meeting or a multi-day conference, The Barn’s unique site and special nonprofit rates will allow you to create the ideal event for your organization. The Barn is a converted historic barn located in the heart of the lakes area. Several distinct settings are available that can be used by themselves or combined to meet your group or social event needs.',
-        'private':'Whether hosting a private party for friends and family, a high school graduation, a family reunion, or just a fun gathering, The Barn at Dunvilla is here to help you celebrate in style! We will help you organize and create your celebration all while giving you the peace of mind that your guests will enjoy themselves throughout the day.',
-        'special': 'The Barn at Dunvilla hosts numerous special events throughout the year, some of which include: Christmas at The Barn, Spring Market & Junk Market, The Dunn Show, Summer Concert Series, Food Truck Rodeos, Dunvilla Lions Food Nights, and Holiday Glam. Please follow our Events page on our website, Facebook and Instagram for information on all of our special events!  If you have ideas on what we could add to our special events, please contact us and we can chat!'
-    }
-    function chooseCat(cat) {
-        $categories.forEach(function(c){
-            $('#'+c).removeClass("active")
-        })
-        $('#' + cat).addClass("active")
-        $("#description").text($categoires_desc[cat])
-    }
+      $categories = [
+        "weddings",
+        "corporate",
+        "nonprofit",
+        "private",
+        "special"
+      ];
+      $categoires_desc = {
+        weddings:
+          "The Barn is a gorgeous venue with large areas on the main floor, the loft, outdoor patio and deck. With seating in the loft easily for 250, and sometimes up to 280, the indoor space offers everything you need for all the events of the day, while the outdoor offers lawn for ceremonies, receptions, and relaxation. The Barn includes a Bridal Retreat for getting ready for your day along with The Boathouse for the groom and his friends. On six spacious acres, the property  includes ample space for wedding celebrations on the lawn and inside The Barn along with space for lawn games, throwing a ball, hanging out on the patio and deck, or just walking around to enjoy the day.",
+        corporate:
+          "Create new inspiration in your employees by getting them out of the office for an offsite special event that your colleagues and employees will remember!  Let ideas and imaginations flow surrounded by the sounds and sights at The Barn at Dunvilla.  Enjoy a BBQ lunch, or traditional catered meal, on the lawn or in our beautiful indoors.  Celebrate a company Christmas party or successful business year. The Barn at Dunvilla offers many possibilities for corporate gatherings with six acres of outdoor space and two levels of indoor space with seating for 250. We have everything you need to host your event in a comfortable environment.  A great venue for planning that next big strategy, doing team building or celebrating with your colleagues!",
+        nonprofit:
+          "The Barn at Dunvilla welcomes nonprofit groups for meetings and conferences. Whether hosting a one day meeting or a multi-day conference, The Barn’s unique site and special nonprofit rates will allow you to create the ideal event for your organization. The Barn is a converted historic barn located in the heart of the lakes area. Several distinct settings are available that can be used by themselves or combined to meet your group or social event needs.",
+        private:
+          "Whether hosting a private party for friends and family, a high school graduation, a family reunion, or just a fun gathering, The Barn at Dunvilla is here to help you celebrate in style! We will help you organize and create your celebration all while giving you the peace of mind that your guests will enjoy themselves throughout the day.",
+        special:
+          "The Barn at Dunvilla hosts numerous special events throughout the year, some of which include: Christmas at The Barn, Spring Market & Junk Market, The Dunn Show, Summer Concert Series, Food Truck Rodeos, Dunvilla Lions Food Nights, and Holiday Glam. Please follow our Events page on our website, Facebook and Instagram for information on all of our special events!  If you have ideas on what we could add to our special events, please contact us and we can chat!"
+      };
+      function chooseCat(cat) {
+        $categories.forEach(function(c) {
+          $("#" + c).removeClass("active");
+        });
+        $("#" + cat).addClass("active");
+        $("#description").text($categoires_desc[cat]);
+      }
 
-    $(document).ready(function(qs) {
-        var url_string = window.location.href ;  
+      $(document).ready(function(qs) {
+        var url_string = window.location.href;
         var url = new URL(url_string);
         var type = url.searchParams.get("type");
-        if(type != null ){
-
-        chooseCat(type)
+        if (type != null) {
+          chooseCat(type);
         }
-    })
+      });
 
-    function menuToggle() {
-      
-      class_list = $("#menu-icon").attr("class").split(' ')
-      if(class_list[1]=='menuClosed'){
-        $("#menu-icon").removeClass('menuClosed')
-        $("#menu-icon").addClass('menuOpen')
-        $(".navMobile").addClass('navMobileVisible')
+      function menuToggle() {
+        class_list = $("#menu-icon")
+          .attr("class")
+          .split(" ");
+        if (class_list[1] == "menuClosed") {
+          $("#menu-icon").removeClass("menuClosed");
+          $("#menu-icon").addClass("menuOpen");
+          $(".navMobile").addClass("navMobileVisible");
+        } else {
+          $("#menu-icon").removeClass("menuOpen");
+          $("#menu-icon").addClass("menuClosed");
+          $(".navMobile").removeClass("navMobileVisible");
+        }
       }
-      else{
-        $("#menu-icon").removeClass('menuOpen')
-        $("#menu-icon").addClass('menuClosed')
-        $(".navMobile").removeClass('navMobileVisible')
-      }
-    }
-  </script>
-
+    </script>
   </body>
 </html>
