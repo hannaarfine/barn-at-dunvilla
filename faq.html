@@ -1,44 +1,76 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93480337-2"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-93480337-2"
+    ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-93480337-2');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-93480337-2");
     </script>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Barn at Dunvilla</title>
-    <link rel = "stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="manifest" href="assets/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
 
   <body>
-
     <div>
       <header>
         <nav class="header">
-          <div class='menuToggle menuClosed' onclick="menuToggle()" id="menu-icon"></div>
-          <ul class='nav-left'>
+          <div
+            class="menuToggle menuClosed"
+            onclick="menuToggle()"
+            id="menu-icon"
+          ></div>
+          <ul class="nav-left">
             <li><a href="venue.html">Venue</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li class="dropdown"><a href="events.html">Events</a>
-            <div class="dropdown-content" id="event-dropdown">
+            <li class="dropdown">
+              <a href="events.html">Events</a>
+              <div class="dropdown-content" id="event-dropdown">
                 <div><a href="events.html?type=weddings">Weddings </a></div>
                 <div><a href="events.html?type=corporate">Corporate</a></div>
                 <div><a href="events.html?type=nonprofit">NonProfit</a></div>
@@ -47,299 +79,485 @@
               </div>
             </li>
           </ul>
-          <a href="index.html"><div id="logo-header"><img src="assets/barn-logo-temp.png" id="logo"></div></a>
-          <ul class='nav-right'>
-            <li class="dropdown"><a href="included.html" >Included</a>
+          <a href="index.html"
+            ><div id="logo-header">
+              <img src="assets/barn-logo-temp.png" id="logo" /></div
+          ></a>
+          <ul class="nav-right">
+            <li class="dropdown">
+              <a href="included.html">Included</a>
               <div class="dropdown-content">
-                  <div><a href="#">Included in Your Package </a></div>
-                  <div><a href="#">Booking </a></div>
-                  <div><a href="#">Decor </a></div>
-                </div>
+                <div><a href="#">Included in Your Package </a></div>
+                <div><a href="#">Booking </a></div>
+                <div><a href="#">Decor </a></div>
+              </div>
             </li>
             <li><a href="faq.html" style="opacity: .5;">FAQ</a></li>
-            <li ><a href="history.html">History</a></li>
-            <li ><a href="contact.html"  >Contact</a></li>
-            
-           
+            <li><a href="history.html">History</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
-  
-      <div class="navMobile" >
+
+      <div class="navMobile">
         <ul>
           <li><a href="venue.html">Venue</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="events.html">Events</a></li> 
-          <li><a href="included.html">Included</a>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="included.html">Included</a></li>
           <li><a href="faq.html">FAQ</a></li>
-          <li ><a href="history.html">History</a></li>
-          <li ><a href="contact.html">Contact</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
 
-  
-    <div class="parallax" id="faq-parallax" style="margin-top: 115px;"><h1>FAQ </h1> </div>
-      <div class="main" id="faq">
-        <div onclick="toggleQ(0)" id=0 class="question open">
-          <div class='question-title'><h5>What is the capacity of The Barn?</h5><img src="assets/chevron-down.svg" id="down">
+    <div class="parallax" id="faq-parallax" style="margin-top: 115px;">
+      <h1>FAQ</h1>
+    </div>
+    <div class="main" id="faq">
+      <div onclick="toggleQ(0)" id="0" class="question open">
+        <div class="question-title">
+          <h5>What is the capacity of The Barn?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          The official capacity for The Barn is 250-280. With seating in the
+          loft easily for 250, and sometimes up to 280, the indoor space offers
+          everything you need for all the events of the day, while the outdoor
+          offers lawn for ceremonies, receptions, and relaxation. Outdoor
+          ceremonies and activities can accommodate more and can be done with
+          prior approval from The Barn.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(1)" id="1" class="question open">
+        <div class="question-title">
+          <h5>Where do ceremonies take place?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          With several wonderful options, you can enjoy planning your unique
+          wedding day. The outdoors provides three separate spaces for wedding
+          ceremonies. Many couples love having the ceremony under our two
+          magnificent oak trees on the back lawn. Between The Barn and the hotel
+          is a beautiful pond with a natural amphitheater that is a gorgeous
+          setting for wedding ceremonies. A bit more on the rustic side, we have
+          a large open space with a field as the backdrop setting that is
+          perfect for the couple who wants a bit more of a rustic or country
+          setting. Indoor ceremonies typically take place in The Barn loft which
+          has a majestic beauty with its natural wood cathedral ceiling. Some
+          small weddings have taken place in front of the fireplace on the main
+          floor which provides a beautiful and cozy atmosphere.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(2)" id="2" class="question open">
+        <div class="question-title">
+          <h5>Does The Barn have heating and air conditioning?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          Yes, The Barn is fully fitted with heating and air conditioning that
+          make it comfortable for events throughout the entire year!
+        </p>
+      </div>
+
+      <div onclick="toggleQ(3)" id="3" class="question open">
+        <div class="question-title">
+          <h5>Where do the bride and groom get ready?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          For the bride and her gals, The Barn includes a Bridal Retreat for
+          getting ready for your day. The Bridal Retreat is in a charming and
+          light-filled lofted room connected to The Barn complete with ample
+          counter space, electric outlets, seating and a refrigerator. During
+          colder months, the space has a fireplace for cozy, warm ambience. For
+          the groom and his buddies, we have The Boathouse which is a separate
+          building that provides them space to get reading, relax and enjoy
+          getting prepared for the day.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(4)" id="4" class="question open">
+        <div class="question-title">
+          <h5>When can I come for a tour?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          Tours can be set throughout the week to accommodate your schedule and
+          around event times.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(5)" id="5" class="question open">
+        <div class="question-title">
+          <h5>Does The Barn have bathrooms?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          Yes, we have three indoor restrooms on the main floor. One bathroom is
+          fitted with a changing table for families with small children.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(6)" id="6" class="question open">
+        <div class="question-title">
+          <h5>What food and bar caterers can we use?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          For food and cakes, The Barn has an open vendor policy so that couples
+          may choose the food and vendor of their choice leaving a wide array of
+          possibilities. If you want to find a wonderful local food caterer, we
+          have a list of vendors who are highly recommended by our clients and
+          we can share that with you. If supplying your own food, this can be
+          arranged with prior approval and an insurance policy. All alcohol for
+          your event must be provided and served by Lakeside Tavern, our
+          exclusive bar host. Providing many options for cash bar and hosted
+          bar, Lakeside Tavern has an impeccable reputation and level of
+          customer service.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(7)" id="7" class="question open">
+        <div class="question-title">
+          <h5>Where do the caterers work and serve from?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          Lakeside Tavern has a bar setup on the main floor that includes large
+          countertop spaces, refrigerated coolers, keg coolers, and a bar sink.
+          Food caterers have a food prep area inside along with an outdoor space
+          in the back to set up trailers, grills, etc.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(8)" id="8" class="question open">
+        <div class="question-title">
+          <h5>Are tables and chairs provided/included?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          Yes, all tables and chairs needed for your event are provided by The
+          Barn and included in the rental fee for up to 300 guests. This
+          includes: outdoor ceremony chairs, indoor seating chairs, banquet
+          tables (8’ and 6’) and round tables (60”).
+        </p>
+      </div>
+
+      <div onclick="toggleQ(9)" id="9" class="question open">
+        <div class="question-title">
+          <h5>Who does the setup of tables and chairs?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          The Barn staff will do the initial setup of tables and chairs for the
+          start of your event. Any rearranging of furniture during the event is
+          the responsibility of the wedding party.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(10)" id="10" class="question open">
+        <div class="question-title">
+          <h5>Are linens provided?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          Yes, white linens are included in the rental fee. If you prefer
+          specialty or colored linens, they would need to be rented by you.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(11)" id="11" class="question open">
+        <div class="question-title">
+          <h5>Do you have a projector and screen?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          Yes, we do have a projector and screen that can be used in the loft.
+          On the main floor, we have a mounted TV that can be connected to your
+          iPad or laptop for a slide show.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(12)" id="12" class="question open">
+        <div class="question-title">
+          <h5>Do you have a sound system?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          The Barn has sound systems for both indoors and outdoors. The sound
+          system in the loft includes two hand-held microphones using four
+          speakers mounted on the walls. The outdoor sound system includes two
+          speakers which can be mounted on stands along with the handheld
+          microphone and a clip-on microphone.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(13)" id="13" class="question open">
+        <div class="question-title">
+          <h5>Is there a dance floor?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          Yes, we have a reinforced dance floor in the loft. Your music can be
+          hosted by a DJ, a live band, or a friend who plays the music through
+          our sound system.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(14)" id="14" class="question open">
+        <div class="question-title">
+          <h5>How early can we start setting up for our event?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          The standard start time at the beginning of each event day is 8:00
+          a.m.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(15)" id="15" class="question open">
+        <div class="question-title">
+          <h5>What time do we have to end our event?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          The standard ending time for an event is midnight with all amplified
+          music and the bar being shut down by 11:30 p.m.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(16)" id="16" class="question open">
+        <div class="question-title">
+          <h5>Is staff on site to assist during the event?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          Yes, we have a host on site during the day/time of your event to
+          assist with answering questions, finding items you requested, helping
+          to organize any changes, etc. Our hosts are excellent with wonderful
+          experience in assisting brides and grooms along with their families
+          for the day.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(17)" id="17" class="question open">
+        <div class="question-title">
+          <h5>Where do our guests park?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          The Barn has a large grassy parking area on the east side of the
+          building. This parking lot accommodates your entire party and guests.
+          If you are staying at the hotel next door, many guests enjoy walking
+          across the lawn to The Barn and leaving their cars at the hotel.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(18)" id="18" class="question open">
+        <div class="question-title">
+          <h5>Is there an elevator or lift?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          While there is no elevator, we do have a stair lift that accommodates
+          people who need assistance and are ADA compliant.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(19)" id="19" class="question open">
+        <div class="question-title">
+          <h5>Can we set up outdoor games?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          Yes! With six acres, there is a wonderful amount of outdoor space for
+          playing games and we encourage play and fun to be a part of your day!
+          The Barn also has a firepit that you can use during your event.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(20)" id="20" class="question open">
+        <div class="question-title">
+          <h5>
+            At the end of the night, what are our responsibilities in terms of
+            clean-up?
+          </h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          All personal belongings, décor and rented items must be packed up and
+          removed from the property. The garbage should all be bagged up and put
+          into the trash bin by the little red barn. The Barn’s décor items
+          should be gathered and put onto a table on the main floor; our staff
+          will be responsible for putting The Barn’s décor into totes and
+          repackaging. The Barn’s linens should be put into the linen bags
+          provided by The Barn. The Barn’s tables and chairs need only to be
+          positioned into place. Our staff will take care of the thorough
+          cleaning (sweeping, washing floors, cleaning bathrooms, dusting) after
+          the event is finished.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(21)" id="21" class="question open">
+        <div class="question-title">
+          <h5>Can we leave things overnight?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          Our policy is that everything must be removed at the end of the rental
+          period. We do realize that this can sometimes be difficult with larger
+          items. Permission must be requested to leave items overnight and the
+          items must be stored in a separate vehicle or trailer; they may not be
+          stored inside The Barn or any of the buildings on site. The Barn is
+          not responsible for lost or stolen items.
+        </p>
+      </div>
+
+      <div onclick="toggleQ(22)" id="22" class="question open">
+        <div class="question-title">
+          <h5>Can we leave cars in the parking lot overnight?</h5>
+          <img src="assets/chevron-down.svg" id="down" />
+        </div>
+        <p>
+          Yes, you certainly can! We appreciate responsible driving so we
+          encourage people to use designated drivers and leave cars overnight.
+          As we have events most days, the vehicles will need to be picked up
+          the following morning by 11:00 a.m.
+        </p>
+      </div>
+
+      <hr />
+
+      <div id="contact-us" style="margin-top: 100px">
+        <div class="half">
+          <h1>Don't see your question? Ask us!</h1>
+          <div>
+            <img src="assets/map-pin.svg" id="pin" />
+            <p id="address">48203 U.S. 59, Pelican Rapids, 56572</p>
           </div>
-          <p>The official capacity for The Barn is 250-280. With seating in the loft easily for 250, and sometimes up to 280, the indoor space offers everything you need for all the events of the day, while the outdoor offers lawn for ceremonies, receptions, and relaxation.  Outdoor ceremonies and activities can accommodate more and can be done with prior approval from The Barn.</p>
-        </div>
-
-        <div onclick="toggleQ(1)" id=1 class="question open">
-            <div class='question-title'><h5>Where do ceremonies take place?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>With several wonderful options, you can enjoy planning your unique wedding day.   The outdoors provides three separate spaces for wedding ceremonies. Many couples love having the ceremony under our two magnificent oak trees on the back lawn. Between The Barn and the hotel is a beautiful pond with a natural amphitheater that is a gorgeous setting for wedding ceremonies.  A bit more on the rustic side, we have a large open space with a field as the backdrop setting that is perfect for the couple who wants a bit more of a rustic or country setting. Indoor ceremonies typically take place in The Barn loft which has a majestic beauty with its natural wood cathedral ceiling.  Some small weddings have taken place in front of the fireplace on the main floor which provides a beautiful and cozy atmosphere.</p>
-        </div>
-
-        <div onclick="toggleQ(2)" id=2 class="question open">
-            <div class='question-title'><h5>Does The Barn have heating and air conditioning?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>Yes, The Barn is fully fitted with heating and air conditioning that make it comfortable for events throughout the
-                entire year!</p>
-        </div>
-
-        <div onclick="toggleQ(3)" id=3 class="question open">
-            <div class='question-title'><h5>Where do the bride and groom get ready?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>For the bride and her gals, The Barn includes a Bridal Retreat for getting ready for your day. The Bridal Retreat is in
-                a charming and light-filled lofted room connected to The Barn complete with ample counter space, electric outlets,
-                seating and a refrigerator. During colder months, the space has a fireplace for cozy, warm ambience. For the
-                groom and his buddies, we have The Boathouse which is a separate building that provides them space to get
-                reading, relax and enjoy getting prepared for the day.</p>
-        </div>
-
-        <div onclick="toggleQ(4)" id=4 class="question open">
-            <div class='question-title'><h5>When can I come for a tour?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>Tours can be set throughout the week to accommodate your schedule and around event times. </p>
-        </div>
-
-        <div onclick="toggleQ(5)" id=5 class="question open">
-            <div class='question-title'><h5>Does The Barn have bathrooms?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>Yes, we have three indoor restrooms on the main floor.  One bathroom is fitted with a changing table for families with small children.</p>
-        </div>
-
-        <div onclick="toggleQ(6)" id=6 class="question open">
-            <div class='question-title'><h5>What food and bar caterers can we use?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>For food and cakes, The Barn has an open vendor policy so that couples may choose the food and vendor of their choice leaving a wide array of possibilities. If you want to find a wonderful local food caterer, we have a list of vendors who are highly recommended by our clients and we can share that with you. If supplying your own food, this can be arranged with prior approval and an insurance policy. 
-                All alcohol for your event must be provided and served by Lakeside Tavern, our exclusive bar host. Providing many options for cash bar and hosted bar, Lakeside Tavern has an impeccable reputation and level of customer service. 
-                </p>
-        </div>
-
-        <div onclick="toggleQ(7)" id=7 class="question open">
-            <div class='question-title'><h5>Where do the caterers work and serve from?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>Lakeside Tavern has a bar setup on the main floor that includes large countertop spaces, refrigerated coolers, keg coolers, and a bar sink.  Food caterers have a food prep area inside along with an outdoor space in the back to set up trailers, grills, etc.
-              </p>
-        </div>
-
-        <div onclick="toggleQ(8)" id=8 class="question open">
-            <div class='question-title'><h5>Are tables and chairs provided/included?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>Yes, all tables and chairs needed for your event are provided by The Barn and included in the rental fee for up to 300 guests.  This includes: outdoor ceremony chairs, indoor seating chairs, banquet tables (8’ and 6’) and round tables (60”). </p>
-        </div>
-
-        <div onclick="toggleQ(9)" id=9 class="question open">
-            <div class='question-title'><h5>Who does the setup of tables and chairs?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>The Barn staff will do the initial setup of tables and chairs for the start of your event.  Any rearranging of furniture during the event is the responsibility of the wedding party.</p>
-        </div>
-
-        <div onclick="toggleQ(10)" id=10 class="question open">
-            <div class='question-title'><h5>Are linens provided?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>Yes, white linens are included in the rental fee.  If you prefer specialty or colored linens, they would need to be rented by you.
-            </p>
-        </div>
-
-        <div onclick="toggleQ(11)" id=11 class="question open">
-            <div class='question-title'><h5>Do you have a projector and screen?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>Yes, we do have a projector and screen that can be used in the loft.  On the main floor, we have a mounted TV that can be connected to your iPad or laptop for a slide show.
-
-            </p>
-        </div>
-
-        <div onclick="toggleQ(12)" id=12 class="question open">
-            <div class='question-title'><h5>Do you have a sound system?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>The Barn has sound systems for both indoors and outdoors.  The sound system in the loft includes two hand-held microphones using four speakers mounted on the walls.  The outdoor sound system includes two speakers which can be mounted on stands along with the handheld microphone and a clip-on microphone.
-            </p>
-        </div>
-
-        <div onclick="toggleQ(13)" id=13 class="question open">
-            <div class='question-title'><h5>Is there a dance floor?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>
-                Yes, we have a reinforced dance floor in the loft. Your music can be hosted by a DJ, a live band, or a friend who plays the music through our sound system.
-            </p>
-        </div>
-
-        <div onclick="toggleQ(14)" id=14 class="question open">
-            <div class='question-title'><h5>How early can we start setting up for our event?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>
-                The standard start time at the beginning of each event day is 8:00 a.m.
-            </p>
-        </div>
-
-        <div onclick="toggleQ(15)" id=15 class="question open">
-            <div class='question-title'><h5>What time do we have to end our event?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>
-                The standard ending time for an event is midnight with all amplified music and the bar being shut down by 11:30 p.m.
-            </p>
-        </div>
-
-        <div onclick="toggleQ(16)" id=16 class="question open">
-            <div class='question-title'><h5>Is staff on site to assist during the event?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>
-                Yes, we have a host on site during the day/time of your event to assist with answering questions, finding items you requested, helping to organize any changes, etc.  Our hosts are excellent with wonderful experience in assisting brides and grooms along with their families for the day.
-            </p>
-        </div>
-
-        <div onclick="toggleQ(17)" id=17  class="question open">
-            <div class='question-title'><h5>Where do our guests park?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>
-                The Barn has a large grassy parking area on the east side of the building.  This parking lot accommodates your entire party and guests. If you are staying at the hotel next door, many guests enjoy walking across the lawn to The Barn and leaving their cars at the hotel.
-            </p>
-        </div>
-
-        <div onclick="toggleQ(18)" id=18  class="question open">
-            <div class='question-title'><h5>Is there an elevator or lift?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>
-                While there is no elevator, we do have a stair lift that accommodates people who need assistance and are ADA compliant.
-            </p>
-        </div>
-
-        <div onclick="toggleQ(19)" id=19  class="question open">
-            <div class='question-title'><h5>Can we set up outdoor games?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>
-                Yes! With six acres, there is a wonderful amount of outdoor space for playing games and we encourage play and fun to be a part of your day!  The Barn also has a firepit that you can use during your event.
-            </p>
-        </div>
-
-        <div onclick="toggleQ(20)" id=20  class="question open">
-            <div class='question-title'><h5>At the end of the night, what are our responsibilities in terms of clean-up?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>All personal belongings, décor and rented items must be packed up and removed from the property.  The garbage should all be bagged up and put into the trash bin by the little red barn.  The Barn’s décor items should be gathered and put onto a table on the main floor; our staff will be responsible for putting The Barn’s décor into totes and repackaging. The Barn’s linens should be put into the linen bags provided by The Barn.  The Barn’s tables and chairs need only to be positioned into place.  Our staff will take care of the thorough cleaning (sweeping, washing floors, cleaning bathrooms, dusting) after the event is finished. </p>
-        </div>
-
-        <div onclick="toggleQ(21)" id=21  class="question open">
-            <div class='question-title'><h5>Can we leave things overnight?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>
-                Our policy is that everything must be removed at the end of the rental period. We do realize that this can sometimes be difficult with larger items.  Permission must be requested to leave items overnight and the items must be stored in a separate vehicle or trailer; they may not be stored inside The Barn or any of the buildings on site. The Barn is not responsible for lost or stolen items.
-            </p>
-        </div>
-
-        <div onclick="toggleQ(22)" id=22  class="question open">
-            <div class='question-title'><h5>Can we leave cars in the parking lot overnight?</h5><img src="assets/chevron-down.svg" id="down">
-            </div>
-            <p>
-                Yes, you certainly can! We appreciate responsible driving so we encourage people to use designated drivers and leave cars overnight.  As we have events most days, the vehicles will need to be picked up the following morning by 11:00 a.m.
-            </p>
-        </div>
-
-        <hr />
-
-        <div id="contact-us" style="margin-top: 100px">
-            <div class="half">
-                <h1>Don't see your question? Ask us! </h1>
-                <div >
-                    <img src="assets/map-pin.svg" id="pin"/><p id="address">48203 U.S. 59, Pelican Rapids, 56572</p>
-                </div>
-                <div class="row">
-                    <img src="assets/phone.svg" id="phone"/><p id="phone"><a href="tel:+2188499621">218.849.9621</a></p>
-                </div>
-                <div style="border-radius: 4px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5476.479382079232!2d-96.02307803928852!3d46.66152870129511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52c9ab53dafee79b%3A0x62f2c678f4038b46!2sThe+Barn+at+Dunvilla!5e0!3m2!1sen!2sus!4v1543689550010" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe></div>
-            </div>
-            <div class="half">
-                <form action="mailto:thebarnatdunvilla@gmail.com" method="post" enctype="text/plain">
-                    <input type="text" placeholder="Your name" name="name"/>
-                     <input type="text" placeholder="Your email address" name="email"/>
-                     <textarea placeholder="Type your message here" name="message"></textarea>
-                     <input type="submit" id="send" value="Send" > 
-                </form>
-            </div>
+          <div class="row">
+            <img src="assets/phone.svg" id="phone" />
+            <p id="phone"><a href="tel:+2188499621">218.849.9621</a></p>
           </div>
-
+          <div style="border-radius: 4px">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5476.479382079232!2d-96.02307803928852!3d46.66152870129511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52c9ab53dafee79b%3A0x62f2c678f4038b46!2sThe+Barn+at+Dunvilla!5e0!3m2!1sen!2sus!4v1543689550010"
+              width="100%"
+              height="300"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
-
-        <div class="faq-contact-mobile" >
-            <div class="faq-contact-content">
-             <h1>Don't see your question? Ask us! </h1>
-             <div class="contact-form">
-                 <form action="mailto:thebarnatdunvilla@gmail.com" method="post" enctype="text/plain">
-                     <input type="text" placeholder="Your name" name="name"/>
-                      <input type="text" placeholder="Your email address" name="email"/>
-                      <textarea placeholder="Type your message here" name="message"></textarea>
-                      <input type="submit" id="send" value="Send" > 
-                 </form>
-             </div>
-           </div>
-         </div>
-        
-
-    <div>
-        <footer id="footer">
-          
-          <p id="title">The Barn at Dunvilla</p>
-          <p>48203 U.S. 59, <br />
-          Pelican Rapids, MN <br />
-          56572
-          </p>
-
-          <p>
-            (218) 849-9621
-          </p>
-    
-            <div class="icons">
-                <a href="https://www.instagram.com/barnatdunvilla/" target="_blank"><img src="assets/instagram.svg" /></a>
-                <a href="https://www.facebook.com/TheBarnAtDunvilla/?jazoest=2651001206895112122709810089747710890837045821086510175838610511511711111880787211211889113791018295747576801035865100121551106766768851685710510376955774711061009910310810055571167911675103555410378901081085311771721128965" target="_blank"><img src="assets/facebook.svg" /></a>
-                <a href="tel:2188499621"><img src="assets/phone2.svg" id="call"/></a>
-            </div>  
-        </footer>
+        <div class="half">
+          <form
+            action="mailto:thebarnatdunvilla@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <input type="text" placeholder="Your name" name="name" />
+            <input type="text" placeholder="Your email address" name="email" />
+            <textarea
+              placeholder="Type your message here"
+              name="message"
+            ></textarea>
+            <input type="submit" id="send" value="Send" />
+          </form>
+        </div>
+      </div>
     </div>
 
+    <div class="faq-contact-mobile">
+      <div class="faq-contact-content">
+        <h1>Don't see your question? Ask us!</h1>
+        <div class="contact-form">
+          <form
+            action="mailto:thebarnatdunvilla@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <input type="text" placeholder="Your name" name="name" />
+            <input type="text" placeholder="Your email address" name="email" />
+            <textarea
+              placeholder="Type your message here"
+              name="message"
+            ></textarea>
+            <input type="submit" id="send" value="Send" />
+          </form>
+        </div>
+      </div>
+    </div>
 
-  <script>
-    function toggleQ(q){
-      var el = document.getElementById(q).classList;
-      var element = $("#" + q);
-      if(el.contains("open") == true ){
-        element.removeClass("open");
-        element.addClass("closed")
-      }
-      else {
-         element.removeClass("closed");
-          element.addClass("open")
-      }
-    }
+    <div>
+      <footer id="footer">
+        <p id="title">The Barn at Dunvilla</p>
+        <p>
+          48203 U.S. 59, <br />
+          Pelican Rapids, MN <br />
+          56572
+        </p>
 
-    function menuToggle() {
-      
-      class_list = $("#menu-icon").attr("class").split(' ')
-      if(class_list[1]=='menuClosed'){
-        $("#menu-icon").removeClass('menuClosed')
-        $("#menu-icon").addClass('menuOpen')
-        $(".navMobile").addClass('navMobileVisible')
-      }
-      else{
-        $("#menu-icon").removeClass('menuOpen')
-        $("#menu-icon").addClass('menuClosed')
-        $(".navMobile").removeClass('navMobileVisible')
-      }
-    }
-  </script>
+        <p>
+          (218) 849-9621
+        </p>
 
+        <div class="icons">
+          <a href="https://www.instagram.com/barnatdunvilla/" target="_blank"
+            ><img src="assets/instagram.svg"
+          /></a>
+          <a
+            href="https://www.facebook.com/TheBarnAtDunvilla/?jazoest=2651001206895112122709810089747710890837045821086510175838610511511711111880787211211889113791018295747576801035865100121551106766768851685710510376955774711061009910310810055571167911675103555410378901081085311771721128965"
+            target="_blank"
+            ><img src="assets/facebook.svg"
+          /></a>
+          <a href="tel:2188499621"><img src="assets/phone2.svg" id="call"/></a>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      var mobileNav = document.querySelector(".navMobile ul");
+
+      if (mobileNav) {
+        `${window.innerHeight * 0.6}px`;
+      }
+      function toggleQ(q) {
+        var el = document.getElementById(q).classList;
+        var element = $("#" + q);
+        if (el.contains("open") == true) {
+          element.removeClass("open");
+          element.addClass("closed");
+        } else {
+          element.removeClass("closed");
+          element.addClass("open");
+        }
+      }
+
+      function menuToggle() {
+        class_list = $("#menu-icon")
+          .attr("class")
+          .split(" ");
+        if (class_list[1] == "menuClosed") {
+          $("#menu-icon").removeClass("menuClosed");
+          $("#menu-icon").addClass("menuOpen");
+          $(".navMobile").addClass("navMobileVisible");
+        } else {
+          $("#menu-icon").removeClass("menuOpen");
+          $("#menu-icon").addClass("menuClosed");
+          $(".navMobile").removeClass("navMobileVisible");
+        }
+      }
+
+      var mobileNav = document.querySelector(".navMobile ul");
+
+      if (mobileNav) {
+        `${window.innerHeight * 0.6}px`;
+      }
+    </script>
   </body>
 </html>
