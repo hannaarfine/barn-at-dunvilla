@@ -650,7 +650,17 @@ nav a {
 footer {
   background: rgba(0, 0, 0, 0.9) !important;
   color: white !important;
-  padding: 50px;
+  padding: 80px 50px 50px 50px;
+  position: relative;
+  margin-top: 50px;
+}
+.otterLogo {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: -60px;
+
+  left: calc(50% - 62.5px);
 }
 #call {
   width: 16px;
