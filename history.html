@@ -75,7 +75,7 @@
               </div>
             </li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a style="opacity: .5;" href="history.html">History</a></li>
+            <li><a style="opacity: 0.5" href="history.html">History</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
@@ -170,9 +170,7 @@
           56572
         </p>
 
-        <p>
-          (218) 849-7802
-        </p>
+        <p>218-234-6240</p>
 
         <div class="icons">
           <a href="https://www.instagram.com/barnatdunvilla/" target="_blank"
@@ -183,7 +181,7 @@
             target="_blank"
             ><img src="assets/facebook.svg"
           /></a>
-          <a href="tel:2188499621"><img src="assets/phone2.svg" id="call"/></a>
+          <a href="tel:2182346240"><img src="assets/phone2.svg" id="call" /></a>
         </div>
       </footer>
     </div>
@@ -194,28 +192,26 @@
       if (mobileNav) {
         `${window.innerHeight * 0.6}px`;
       }
-      $(document).ready(function() {
+      $(document).ready(function () {
         $(".quotes").slick({
           infinite: true,
           autoplay: true,
           autoplaySpeed: 10000,
-          dots: false
+          dots: false,
         });
       });
 
-      $(document).ready(function() {
+      $(document).ready(function () {
         $(".main-slide").slick({
           infinite: true,
           autoplay: true,
           autoplaySpeed: 10000,
-          dots: false
+          dots: false,
         });
       });
 
       function menuToggle() {
-        class_list = $("#menu-icon")
-          .attr("class")
-          .split(" ");
+        class_list = $("#menu-icon").attr("class").split(" ");
         if (class_list[1] == "menuClosed") {
           $("#menu-icon").removeClass("menuClosed");
           $("#menu-icon").addClass("menuOpen");

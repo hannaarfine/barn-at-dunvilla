@@ -69,7 +69,7 @@
           ></div>
           <ul class="nav-left">
             <li><a href="venue.html">Venue</a></li>
-            <li><a href="gallery.html" style="opacity: .5">Gallery</a></li>
+            <li><a href="gallery.html" style="opacity: 0.5">Gallery</a></li>
             <li class="dropdown">
               <a href="events.html">Events</a>
               <div class="dropdown-content" id="event-dropdown">
@@ -116,7 +116,7 @@
       </div>
     </div>
 
-    <div class="parallax" id="faq-parallax" style="margin-top: 115px;">
+    <div class="parallax" id="faq-parallax" style="margin-top: 115px">
       <h1>Gallery</h1>
     </div>
     <div class="main" id="filter-section">
@@ -149,7 +149,7 @@
             target="_blank"
             ><img src="assets/facebook.svg"
           /></a>
-          <a href="tel:2188499621"><img src="assets/phone2.svg" id="call"/></a>
+          <a href="tel:2182346240"><img src="assets/phone2.svg" id="call" /></a>
         </div>
       </footer>
     </div>
@@ -157,11 +157,11 @@
     <script>
       $categories = ["all", "loft", "outside", "bridal", "fireplace"];
 
-      $(document).ready(function() {
+      $(document).ready(function () {
         drawImages("all");
       });
 
-      $(document).ready(function() {
+      $(document).ready(function () {
         var url_string = window.location.href;
         var url = new URL(url_string);
         var type = url.searchParams.get("tag");
@@ -191,7 +191,7 @@
           ' <a href="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-66.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-66.jpg" /></div></a>',
           ' <a href="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-104.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-104.jpg" /></div></a>',
           ' <a href="assets/gallery/The-Barn-at-Dunvilla-Wedding-Photos-77.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Wedding-Photos-77.jpg" /></div></a>',
-          ' <a href="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-71.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-71.jpg" /></div></a>'
+          ' <a href="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-71.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-71.jpg" /></div></a>',
         ];
         $loft = [
           '<a href="assets/home/Barn0.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/home/Barn0.jpg" /></div></a>',
@@ -220,10 +220,10 @@
           '<a href="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-1.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-1.jpg" /></div></a>',
           ' <a href="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-49.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-49.jpg" /></div></a>',
           ' <a href="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-65.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-65.jpg" /></div></a>',
-          ' <a href="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-66.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-66.jpg" /></div></a>'
+          ' <a href="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-66.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Wedding-Pictures-66.jpg" /></div></a>',
         ];
         $fireplace = [
-          '<a href="assets/fireplace.png" data-lightbox="gallery"><div class="half-panel"><img src="assets/fireplace.png" /></div></a>'
+          '<a href="assets/fireplace.png" data-lightbox="gallery"><div class="half-panel"><img src="assets/fireplace.png" /></div></a>',
         ];
         $bridal = [
           ' <a href="assets/bridal-suite.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/bridal-suite.jpg" /></div></a>',
@@ -232,43 +232,43 @@
           ' <a href="assets/gallery/2018-09-19_0021-768x1152.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0021-768x1152.jpg" /></div></a>',
           '<a href="assets/gallery/2018-09-19_0022-768x1152.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/2018-09-19_0022-768x1152.jpg" /></div></a>',
           ' <a href="assets/gallery/20543768_1090878904376519_3346421830323256105_o.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/20543768_1090878904376519_3346421830323256105_o.jpg" /></div></a>',
-          '<a href="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-6.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-6.jpg" /></div></a>'
+          '<a href="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-6.jpg" data-lightbox="gallery"><div class="half-panel"><img src="assets/gallery/The-Barn-at-Dunvilla-Pelican-Rapids-Wedding-6.jpg" /></div></a>',
         ];
 
         if (tag == "outside") {
-          $outside.forEach(function(img) {
+          $outside.forEach(function (img) {
             $("#gallery-images").append(img);
           });
         } else if (tag == "loft") {
-          $loft.forEach(function(img) {
+          $loft.forEach(function (img) {
             $("#gallery-images").append(img);
           });
         } else if (tag == "fireplace") {
-          $fireplace.forEach(function(img) {
+          $fireplace.forEach(function (img) {
             $("#gallery-images").append(img);
           });
         } else if (tag == "bridal") {
-          $bridal.forEach(function(img) {
+          $bridal.forEach(function (img) {
             $("#gallery-images").append(img);
           });
         } else {
-          $outside.forEach(function(img) {
+          $outside.forEach(function (img) {
             $("#gallery-images").append(img);
           });
-          $loft.forEach(function(img) {
+          $loft.forEach(function (img) {
             $("#gallery-images").append(img);
           });
-          $bridal.forEach(function(img) {
+          $bridal.forEach(function (img) {
             $("#gallery-images").append(img);
           });
-          $fireplace.forEach(function(img) {
+          $fireplace.forEach(function (img) {
             $("#gallery-images").append(img);
           });
         }
       }
 
       function chooseCat(cat) {
-        $categories.forEach(function(c) {
+        $categories.forEach(function (c) {
           $("#" + c).removeClass("active");
         });
         $("#" + cat).addClass("active");
@@ -276,9 +276,7 @@
       }
 
       function menuToggle() {
-        class_list = $("#menu-icon")
-          .attr("class")
-          .split(" ");
+        class_list = $("#menu-icon").attr("class").split(" ");
         if (class_list[1] == "menuClosed") {
           $("#menu-icon").removeClass("menuClosed");
           $("#menu-icon").addClass("menuOpen");

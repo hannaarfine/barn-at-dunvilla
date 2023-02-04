@@ -69,7 +69,7 @@
             <li><a href="venue.html">Venue</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li class="dropdown">
-              <a href="events.html" style="opacity: .5">Events</a>
+              <a href="events.html" style="opacity: 0.5">Events</a>
               <div class="dropdown-content" id="event-dropdown">
                 <div>
                   <a href="events.html?type=weddings" class="active"
@@ -156,9 +156,7 @@
           56572
         </p>
 
-        <p>
-          (218) 849-7802
-        </p>
+        <p>218-234-6240</p>
 
         <div class="icons">
           <a href="https://www.instagram.com/barnatdunvilla/" target="_blank"
@@ -169,7 +167,7 @@
             target="_blank"
             ><img src="assets/facebook.svg"
           /></a>
-          <a href="tel:2188499621"><img src="assets/phone2.svg" id="call"/></a>
+          <a href="tel:2182346240"><img src="assets/phone2.svg" id="call" /></a>
         </div>
       </footer>
     </div>
@@ -180,21 +178,21 @@
       if (mobileNav) {
         `${window.innerHeight * 0.6}px`;
       }
-      $(document).ready(function() {
+      $(document).ready(function () {
         $(".quotes").slick({
           infinite: true,
           autoplay: true,
           autoplaySpeed: 10000,
-          dots: false
+          dots: false,
         });
       });
 
-      $(document).ready(function() {
+      $(document).ready(function () {
         $(".main-slide").slick({
           infinite: true,
           autoplay: true,
           autoplaySpeed: 10000,
-          dots: false
+          dots: false,
         });
       });
 
@@ -203,7 +201,7 @@
         "corporate",
         "nonprofit",
         "private",
-        "special"
+        "special",
       ];
       $categoires_desc = {
         weddings:
@@ -215,17 +213,17 @@
         private:
           "Whether hosting a private party for friends and family, a high school graduation, a family reunion, or just a fun gathering, The Barn at Dunvilla is here to help you celebrate in style! We will help you organize and create your celebration all while giving you the peace of mind that your guests will enjoy themselves throughout the day.",
         special:
-          "The Barn at Dunvilla hosts numerous special events throughout the year, some of which include: Christmas at The Barn, Spring Market & Junk Market, The Dunn Show, Summer Concert Series, Food Truck Rodeos, Dunvilla Lions Food Nights, and Holiday Glam. Please follow our Events page on our website, Facebook and Instagram for information on all of our special events!  If you have ideas on what we could add to our special events, please contact us and we can chat!"
+          "The Barn at Dunvilla hosts numerous special events throughout the year, some of which include: Christmas at The Barn, Spring Market & Junk Market, The Dunn Show, Summer Concert Series, Food Truck Rodeos, Dunvilla Lions Food Nights, and Holiday Glam. Please follow our Events page on our website, Facebook and Instagram for information on all of our special events!  If you have ideas on what we could add to our special events, please contact us and we can chat!",
       };
       function chooseCat(cat) {
-        $categories.forEach(function(c) {
+        $categories.forEach(function (c) {
           $("#" + c).removeClass("active");
         });
         $("#" + cat).addClass("active");
         $("#description").text($categoires_desc[cat]);
       }
 
-      $(document).ready(function(qs) {
+      $(document).ready(function (qs) {
         var url_string = window.location.href;
         var url = new URL(url_string);
         var type = url.searchParams.get("type");
@@ -235,9 +233,7 @@
       });
 
       function menuToggle() {
-        class_list = $("#menu-icon")
-          .attr("class")
-          .split(" ");
+        class_list = $("#menu-icon").attr("class").split(" ");
         if (class_list[1] == "menuClosed") {
           $("#menu-icon").removeClass("menuClosed");
           $("#menu-icon").addClass("menuOpen");
